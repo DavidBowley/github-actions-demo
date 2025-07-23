@@ -10,6 +10,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20.x"
-      - run: npm ci
-      - run: tsc
-      - run: ls $GITHUB_WORKSPACE
+      - run: |
+          npm ci
+          tsc
+          ls $GITHUB_WORKSPACE
