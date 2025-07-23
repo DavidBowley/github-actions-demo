@@ -1,7 +1,7 @@
 function myTestFunction(arg1: string) {
-  console.log("test function ran");
+  console.log(arg1);
 }
 
-const myTest = "Testing 123";
+const myTest = "test function ran";
 
 myTestFunction(myTest);
