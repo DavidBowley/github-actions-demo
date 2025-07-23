@@ -12,5 +12,6 @@ jobs:
           node-version: "20.x"
       - run: npm ci
       - run: tsc
-      - run: cd "${{github.workspace}}/build"
-      - run: node "./testing.js"
+      - name: Test the JS can be executed
+        run: node "testing.js"
+        working-directory: ./build
