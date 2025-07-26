@@ -22,4 +22,8 @@ jobs:
       - name: WIP - run the 11ty build
         run: echo "Running the 11ty build... (WIP)"
       - name: WIP - deploy to GitHub pages
-        run: echo "Deploying to GitHub pages... (WIP)"
+        run: echo "Deploying to GitHub pages... (WIP) - using /src instead of build for testing"
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: src # The folder the action should deploy
