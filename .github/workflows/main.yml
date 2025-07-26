@@ -18,7 +18,7 @@ jobs:
         run: |
           node "testing.js"
           echo "If the console.log output is seen then compiliation was successful"
-        working-directory: ./src
+        working-directory: ./src/assets/js
       - name: WIP - run the 11ty build
         run: echo "Running the 11ty build... (WIP)"
       - name: WIP - deploy to GitHub pages
