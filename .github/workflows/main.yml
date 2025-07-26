@@ -26,7 +26,7 @@ jobs:
           cd "./build"
           ls
 
-      # - name: Deploy to GitHub pages 🚀
-      #   uses: JamesIves/github-pages-deploy-action@v4
-      #   with:
-      #     folder: build # The folder the action should deploy
+      - name: Deploy to GitHub pages 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build # The folder the action should deploy
