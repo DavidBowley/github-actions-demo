@@ -17,6 +17,7 @@
     "typescript-eslint": "^8.38.0"
   },
   "scripts": {
-    "build:dev": "npx @11ty/eleventy --serve"
+    "build:dev": "npx @11ty/eleventy --serve",
+    "build:prod": "npx @11ty/eleventy"
   }
 }

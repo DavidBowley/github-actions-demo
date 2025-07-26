@@ -20,10 +20,13 @@ jobs:
           echo "If the console.log output is seen then compiliation was successful"
         working-directory: ./src/assets/js
       - name: WIP - run the 11ty build
-        run: echo "Running the 11ty build... (WIP)"
-      - name: WIP - deploy to GitHub pages
-        run: echo "Deploying to GitHub pages... (WIP) - using /src instead of build for testing"
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: src # The folder the action should deploy
+        run: npm run build:prod
+      - name: Confirmation of 11ty build
+        run: |
+          cd "./build"
+          ls
+
+      # - name: Deploy to GitHub pages 🚀
+      #   uses: JamesIves/github-pages-deploy-action@v4
+      #   with:
+      #     folder: build # The folder the action should deploy
