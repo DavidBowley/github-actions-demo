@@ -16,6 +16,6 @@ export default async function (eleventyConfig) {
   if (BUILD_ENV === "development") {
     eleventyConfig.addPassthroughCopy("src/assets");
   } else if (BUILD_ENV === "production") {
-    eleventyConfig.addPassthroughCopy("src/assets/**/*/!(*.js.map|*.ts)");
+    eleventyConfig.addPassthroughCopy("src/assets/**/*/!(*.ts)");
   }
 }

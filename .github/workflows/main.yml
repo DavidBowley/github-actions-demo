@@ -13,7 +13,7 @@ jobs:
       - name: Install all Node packages
         run: npm ci
       - name: Run tsc using .tsconfig settings
-        run: npx tsc
+        run: npx tsc -p tsconfig.production.json
       - name: Confirmation of TSC
         run: |
           node "testing.js"
