@@ -19,6 +19,6 @@
   },
   "scripts": {
     "build:dev": "cross-env BUILD_ENV=development npx @11ty/eleventy --serve",
-    "build:prod": "cross-env BUILD_ENV=production npx @11ty/eleventy"
+    "build:prod": "cross-env BUILD_ENV=production npx @11ty/eleventy --pathprefix=github-actions-demo"
   }
 }

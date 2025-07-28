@@ -1,3 +1,5 @@
+import { HtmlBasePlugin } from "@11ty/eleventy";
+
 export default async function (eleventyConfig) {
   const BUILD_ENV = process.env.BUILD_ENV;
 
@@ -12,6 +14,7 @@ export default async function (eleventyConfig) {
 
   eleventyConfig.setInputDirectory("src");
   eleventyConfig.setOutputDirectory("build");
+  eleventyConfig.addPlugin(HtmlBasePlugin);
 
   if (BUILD_ENV === "development") {
     eleventyConfig.addPassthroughCopy("src/assets");
